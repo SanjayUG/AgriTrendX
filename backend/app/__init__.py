@@ -15,6 +15,11 @@ def create_app():
     
     # Register blueprints
     from .routes import main
+    from .routes import kaggle
+    from .routes import forecasting
+    
     app.register_blueprint(main.bp)
+    app.register_blueprint(kaggle.bp, url_prefix='/api/kaggle')
+    app.register_blueprint(forecasting.bp, url_prefix='/api/forecasting')
     
     return app 
