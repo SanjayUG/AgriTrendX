@@ -1,12 +1,62 @@
-# React + Vite
+# AgriTrendX Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend for AgriTrendX, an AI-driven market forecasting system for farmers. The frontend is built using React and Vite, providing a fast and modern development experience.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Real-time Supply Insights**: View crop supply data from various regions.
+- **Demand Forecasting**: AI-powered predictions for future crop demands.
+- **Price Trends**: Monitor price trends and get recommendations for selling opportunities.
+- **Interactive UI**: Smooth animations and responsive design for a seamless user experience.
 
-## Expanding the ESLint configuration
+## Prerequisites
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Node.js 16 or higher
+- npm or yarn package manager
+
+## Project Structure
+
+frontend/ ├── public/ # Static assets │ └── images/ # Images used in the app ├── src/ # Source code │ ├── App.jsx # Main application component │ ├── main.jsx # Entry point for React │ ├── App.css # Application styles │ └── index.css # Global styles ├── .gitignore # Git ignore rules ├── eslint.config.js # ESLint configuration ├── index.html # HTML template ├── package.json # Project metadata and dependencies ├── README.md # Project documentation └── vite.config.js # Vite configuration
+
+
+## Setup Instructions
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd AgriTrendX/frontend
+
+2. **Install dependencies**
+    ```bash
+    npm install
+
+3. **Start the development server**
+    ```bash
+    npm run dev
+
+4. **Access the application**
+Open your browser and navigate to http://localhost:5173.
+
+## Scripts
+
+npm run dev: Start the development server.
+npm run build: Build the application for production.
+npm run preview: Preview the production build.
+npm run lint: Run ESLint to check for code quality issues.
+
+## Development
+
+The application uses Vite for fast builds and hot module replacement (HMR).
+ESLint is configured to enforce coding standards and best practices.
+
+## Deployment
+
+1. **Build the application**
+    ``bash
+    npm run build
+
+2. **Deploy the contents of the dist folder to your preferred hosting service**
+
+## License
+
+This Project structure is licensed under the MIT License 
