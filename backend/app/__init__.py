@@ -14,7 +14,8 @@ def create_app():
     CORS(app)
     
     # Register blueprints
-    from .routes import main
+    from .routes import main, market_trends
     app.register_blueprint(main.bp)
+    app.register_blueprint(market_trends.bp)
     
-    return app 
+    return app
